@@ -31,7 +31,7 @@
 ## 🚀 Quick Start
 
 ### Use the Live Version
-Visit: `[0x9z.github.io/Github-follower-audit](https://0x9z.github.io/Github-follower-audit/)`
+Visit: [0x9z.github.io/Github-follower-audit](https://0x9z.github.io/Github-follower-audit/)
 
 ### Run Locally
 1. Clone the repository:
