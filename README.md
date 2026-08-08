@@ -33,12 +33,12 @@
 ## 🚀 Quick Start
 
 ### Use the Live Version
-Visit: [0x9z.github.io/Github-follower-audit](https://0x9z.github.io/Github-follower-audit/)
+Visit: [0x9z.github.io/snake-detector](https://0x9z.github.io/snake-detector/)
 
 ### Run Locally
 1. Clone the repository:
    ```
-   git clone https://github.com/0x9z/github-follower-audit.git
+   https://0x9z.github.io/snake-detector/
    ```
    
 2. Open index.html in your browser
@@ -50,7 +50,7 @@ No build tools, no npm install, no dependencies. Just open and use.
 
 ## 📁 Project Structure
    ```
-   github-follower-audit/
+   snake-detector/
 ├── index.html          # Main dashboard
 ├── css/
 │   └── style.css      # All styles (dark theme)
@@ -165,7 +165,7 @@ Got questions or suggestions? Open an issue or reach out:
 
     GitHub: @0x9z
 
-    Project Link: https://github.com/0x9z/github-follower-audit
+    Project Link: https://0x9z.github.io/snake-detector/
 
 Made with ❤️ by 0x9z-Anas to keep GitHub honest!
 
