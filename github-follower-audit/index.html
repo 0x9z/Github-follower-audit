@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Follower Audit - Who's Not Following Back?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1><i class="fab fa-github"></i> GitHub Follower Audit</h1>
+            <p class="subtitle">Find out who's not following you back & catch the snakes 🐍</p>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="usernameInput" 
+                    placeholder="Enter GitHub username..."
+                    autocomplete="off"
+                >
+                <button id="checkButton" onclick="startAudit()">
+                    <i class="fas fa-search"></i> Check Followers
+                </button>
+            </div>
+            <p class="hint">Enter any GitHub username to see who doesn't follow them back</p>
+        </section>
+
+        <!-- Loading Spinner -->
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Fetching data from GitHub...</p>
+        </div>
+
+        <!-- Error Message -->
+        <div id="error" class="error hidden"></div>
+
+        <!-- Stats Cards -->
+        <section id="statsSection" class="stats-section hidden">
+            <div class="stat-card followers">
+                <i class="fas fa-users"></i>
+                <div class="stat-info">
+                    <span class="stat-number" id="followersCount">0</span>
+                    <span class="stat-label">Followers</span>
+                </div>
+            </div>
+            <div class="stat-card following">
+                <i class="fas fa-user-plus"></i>
+                <div class="stat-info">
+                    <span class="stat-number" id="followingCount">0</span>
+                    <span class="stat-label">Following</span>
+                </div>
+            </div>
+            <div class="stat-card not-following-back">
+                <i class="fas fa-user-minus"></i>
+                <div class="stat-info">
+                    <span class="stat-number" id="notFollowingBackCount">0</span>
+                    <span class="stat-label">Not Following Back</span>
+                </div>
+            </div>
+            <div class="stat-card snakes">
+                <i class="fas fa-snake"></i>
+                <div class="stat-info">
+                    <span class="stat-number" id="snakesCount">0</span>
+                    <span class="stat-label">Snakes Detected</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="resultsSection" class="results-section hidden">
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('notFollowing')">
+                    <i class="fas fa-user-slash"></i> Not Following Back
+                </button>
+                <button class="tab" onclick="switchTab('snakes')">
+                    <i class="fas fa-snake"></i> Snakes 🐍
+                </button>
+            </div>
+
+            <!-- Not Following Back List -->
+            <div id="notFollowingTab" class="tab-content">
+                <div class="table-container">
+                    <table id="notFollowingTable">
+                        <thead>
+                            <tr>
+                                <th>Avatar</th>
+                                <th>Username</th>
+                                <th>GitHub Profile</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="notFollowingBody">
+                            <!-- Dynamic content -->
+                        </tbody>
+                    </table>
+                </div>
+                <div id="noNotFollowing" class="empty-state hidden">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Everyone you follow follows you back! 🎉</p>
+                </div>
+            </div>
+
+            <!-- Snakes List -->
+            <div id="snakesTab" class="tab-content hidden">
+                <div class="snake-alert">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>These users followed you, you followed back, then they unfollowed you!</p>
+                </div>
+                <div class="table-container">
+                    <table id="snakesTable">
+                        <thead>
+                            <tr>
+                                <th>Avatar</th>
+                                <th>Username</th>
+                                <th>GitHub Profile</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="snakesBody">
+                            <!-- Dynamic content -->
+                        </tbody>
+                    </table>
+                </div>
+                <div id="noSnakes" class="empty-state hidden">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>No snakes detected! Your followers are loyal 🛡️</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="info-section">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <p>Enter a GitHub username</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <p>We fetch their followers & following lists</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <p>Compare and show who doesn't follow back</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <p>Historical tracking detects snakes 🐍</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Built with ❤️ by @0x9z-Anas</p>
+        </footer>
+    </div>
+
+    <script src="js/github-api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
