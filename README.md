@@ -10,7 +10,7 @@
 
 ## 📸 Screenshots
 
-![Dashboard Screenshot](screenshot.png)
+![Snake Detector - Dashboard Screenshot](screenshot.png)
 
 ## ✨ Features
 
