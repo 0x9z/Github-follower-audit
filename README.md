@@ -4,8 +4,9 @@
 > Catch GitHub users who follow then unfollow & find who doesn't follow you back!
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://your-username.github.io/github-follower-audit/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://0x9z.github.io/github-follower-audit/)
 [![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red)](https://github.com)
+[![GitHub Pages](https://img.shields.io/badge/Snake%20Detector-Live-brightgreen)](https://0x9z.github.io/snake-detector/)
 
 ## 📸 Screenshots
 
