@@ -172,6 +172,7 @@ Made with ❤️ by 0x9z-Anas to keep GitHub honest!
 ## Remember: Follow back genuinely, not just for numbers!
 
 
+**🐍 Snake Detector - Don't let the snakes bite!**
 
 ---
 @0x9z
