@@ -1,6 +1,7 @@
-# 🐍 GitHub Follower Audit
+# 🐍 Snake Detector - Catch GitHub Snakes
 
 > A simple, beautiful tool to find out who's not following you back on GitHub and catch those sneaky "follow-unfollow" snakes!
+> Catch GitHub users who follow then unfollow & find who doesn't follow you back!
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://your-username.github.io/github-follower-audit/)
